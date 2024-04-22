@@ -29,6 +29,6 @@ Validators can define a number of parameters - some of which are immutable. More
 * Token / NFD Gating:
   * Supported gating options include:
     * Tokens/NFTs by creator and min amount
-    * Specific ASA ID
+    * Specific ASA ID(s) \[up to 4]
     * Tokens/NFTs created by any address linked within a particular NFD.
     * Owning a segment of a particular NFD Root
