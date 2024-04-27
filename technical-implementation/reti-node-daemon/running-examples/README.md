@@ -10,8 +10,8 @@
   * This is the value set/found in the algod.admin.token file inside the data directory on the Algorand node you're using for each node.
 * Your Validator ID
   * Set via **RETI\_VALIDATORID** env variable or -validator XX CLI flag.
-* The Node number this instance should represent. You run 1 instance of the Reti daemon per 'node' which is an completely independent Algorand node instance.
-  * Set via **RETI\_NODENUM** ev variable of -node XX CLI FLAG
+* The Node number this instance should represent. You run 1 instance of the Reti daemon per 'node' which is a completely independent Algorand node instance.
+  * Set via **RETI\_NODENUM** env variable of -node XX CLI FLAG
 * Mnenonics for the Manager account of your validator (the validator ID).
   * Set via XXXX\_MNEMONIC (any prefix followed by \_MNEMONIC) environment variable.
 * All environment values can be stored in .env files as well.
@@ -43,3 +43,5 @@ In this example, the validator ID is 1, but it needs to be the validator ID allo
 Linux / OSX administrators can easily set this process up as a systemd daemon. Examples or pre-defined configurations will be come later.
 
 ## Running as sidecar w/ Algorand node in Kubernetes
+
+ <!-- missing info on sidecar -->

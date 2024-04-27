@@ -33,17 +33,17 @@ The following files are checked and loaded (if found in working directory) in th
 .env.local\
 .env\
 .env.{network} (the name of the specified network - defaulting to mainnet)\
-{envfile} (if an environment file override was speciied on command line or via RETI\_ENVFILE env. var)
+{envfile} (if an environment file override was specified on command line or via RETI\_ENVFILE env. var)
 
 #### Mnemonics
 
-Mnemonics for the manager address at the moment are read from the environment (in any manner defined above), by reading all environment variables with '\_MNEMONIC' as part of the environment variable name. The value is expected to be a space-delimited 25 word Algorand mnemoic.
+Mnemonics for the manager address at the moment are read from the environment (in any manner defined above), by reading all environment variables with '\_MNEMONIC' as part of the environment variable name. The value is expected to be a space-delimited 25 word Algorand mnemonic.
 
-If none of the addresses loaded via these mnemonics match the owenr or manager of the specified validator ID, the node daemon will refuse to run.
+If none of the addresses loaded via these mnemonics match the owner or manager of the specified validator ID, the node daemon will refuse to run.
 
 #### Global Command Line options
 
-<table><thead><tr><th>Command Line Option</th><th width="192">Environment Variable</th><th></th></tr></thead><tbody><tr><td>--envfile {file}</td><td>RETI_ENVFILE</td><td>Specify an additional file to process like an .env file.</td></tr><tr><td>--validator</td><td>RETI_VALIDATORID</td><td>The validator ID of the validator running commands like the daemon</td></tr><tr><td>--node</td><td>RETI_NODENUM</td><td>The node number (1 - 6)</td></tr><tr><td>--usehostname</td><td></td><td>When running in Kubernetes environments, this sets the node number assuming the node daemon is running as a sidecar alongside an algod container. The suffix of the (presumed statefulset) hostname is used for the node number. Since stateful sets are sequentially numbered starting from 0, the node number will be the hostname suffix + 1.</td></tr><tr><td>--network</td><td>ALGO_NETWORK</td><td>Override the network to use (sandbox, betanet, testnet, mainnet, voitestnet)</td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Command Line Option</th><th width="192">Environment Variable</th><th></th></tr></thead><tbody><tr><td>--envfile {file}</td><td>RETI_ENVFILE</td><td>Specify an additional file to process like an .env file.</td></tr><tr><td>--validator</td><td>RETI_VALIDATORID</td><td>The validator ID of the validator running commands like the daemon</td></tr><tr><td>--node</td><td>RETI_NODENUM</td><td>The node number (1 - 6)</td></tr><tr><td>--usehostname</td><td></td><td>When running in Kubernetes environments, this sets the node number assuming the node daemon is running as a sidecar alongside an algod container. The suffix of the (presumed stateful set) hostname is used for the node number. Since stateful sets are sequentially numbered starting from 0, the node number will be the hostname suffix + 1.</td></tr><tr><td>--network</td><td>ALGO_NETWORK</td><td>Override the network to use (sandbox, betanet, testnet, mainnet, voitestnet)</td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 #### Options for 'Daemon' mode
 
