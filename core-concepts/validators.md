@@ -6,22 +6,20 @@ Many parameters can ONLY be set up front, when defining the validator.
 Allowing them to be changed at will would be dangerous for stakers.
 {% endhint %}
 
-**General Process:** Anyone is able to add themselves as a Validator. The protocol has safeguards in place to ensure Validators can't amass a dangerous amount of stake in a single pool, or combined across all pools for a single validator.
+**General Process:** Anyone is able to add themselves as a Validator. The protocol has safeguards in place to ensure Validators can't amass a dangerous amount of stake in a single pool, or combined across all pools for a single validator. It's very important that Validators take the time to understand what configurations will work best for their project before creating their Validator.
+
+As a Validator you need to be [running a node](../resources/running-a-node.md) and the [Reti Node Daemon](../technical-implementation/reti-node-daemon/).
 
 ***
 
 **Key Elements Defined by Validators:**
 
 * **Owner Address:** Ideally, a cold-wallet address for security.
-* **Management Address:** A hot-wallet address accessible by the 'reti node daemon' for operational commands.
-* **Payout Epoch Time (in minutes):** Frequency of payout balance adjustments (daily, weekly, etc.).  The node daemon will honor this time and trigger the 'epoch' based on the specified schedule for all pools.   The commission is paid out every epoch.  If the epoch is per day, then the commission % is that amount, per day.
-* **Validator Commission Percentage:** Percentage the validator takes out of earned rewards per-epoch for covering operating costs. &#x20;
+* **Management Address:** A hot-wallet address accessible by the 'reti node daemon' for operational commands. The manager account **MUST** be initially funded with at least a few ALGO! The manager account is what the node daemon uses to issue transactions on behalf of the validator. It issues transactions to have pools go online/offline, and most importantly, the Epoch update calls which pays the validator their commission as well compounding staker balances.
 * **Commission Address:** An Algorand address designated for receiving the validator commission, changeable by the owner.
-* **Minimum Stake:** Establishes a lower limit for participation to avoid minimal contributions.
-* **Maximum Stake Per Pool:** Can be set by validator to a lower amount than protocol maximum, or left as unset (0). &#x20;
-  * The default maximum is based on taking the LESSER of:
-    * 15% of online stake / number of pools
-    * The max Algo per account allowed that still receives incentive rewards.  This amount is currently 70 million algo but will likely change over time.
+* **Epoch Length:** Frequency of payout balance adjustments (minutes, hours, days, etc.).  The node daemon will honor this time and trigger the 'epoch' based on the specified schedule for all pools.   The commission is paid out every epoch. **Every time the Validator runs an Epoch calculation they incur txn fees (.005-.02) which can substantially eat into the effective yield**. If a Validator is running Epoch updates every 1 minute, that's 7 - 29 ALGO per day in txn fees!
+* **Commission Percentage:** Percentage the validator takes out of earned rewards per-epoch for covering operating costs. &#x20;
+* **Minimum Entry Stake:** Establishes a lower limit for participation to avoid minimal contributions.
 * **Pools Per Node:** There is a hard limit of 3 pools per node but the validator can define a smaller amount as a signal of how they will run deploy and limit their pools.
 * **NFD ID (Optional):** For associating validators with detailed information for transparency.
 * **Token / NFD Gating:** Validators can require that stakers hold certain types of assets in order to join their pools. This can be used to restrict validator pools to members of a particular community - NFT holders, special 'membership' tokens, etc. Supported options are:
@@ -36,3 +34,9 @@ Allowing them to be changed at will would be dangerous for stakers.
 
 ***
 
+**Hard Protocol Limits**
+
+**Maximum Stake Per Pool:** The default maximum is based on taking the LESSER of:
+
+* 15% of online stake / number of pools
+* The max Algo per account allowed that still receives incentive rewards.  This amount is currently 70 million algo but will likely change over time

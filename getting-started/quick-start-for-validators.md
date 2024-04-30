@@ -4,6 +4,10 @@
 
 The first step is to run a node. Find a number of different resources in [Running a Node](../resources/running-a-node.md) if you don't already have one running.
 
+## Run the Reti Node Daemon
+
+Validators need to run the [Reti Node Daemon](../technical-implementation/reti-node-daemon/) alongside their node.
+
 ## Define Validator
 
 Validators can define a number of parameters - some of which are immutable. More information on each parameter can be found in [Validators](../core-concepts/validators.md).
@@ -12,11 +16,10 @@ Validators can define a number of parameters - some of which are immutable. More
 
 * Owner address
 * Manager address
-* Payout frequency
+* Epcoh Length (Payout frequency)
 * Validator commission rate
 * Validator fee address
 * Minimum entry amount
-* Maximum stake per pool (if the validator wants to limit it in some way). Default value will have max stake be same as max allowed and still receive incentives.
 * Number of pools per node (participation keys) - Maximum of 3
 * Max number of nodes - Maximum of 8
   * This means a maximum of 24 pools can be created.
@@ -32,3 +35,4 @@ Validators can define a number of parameters - some of which are immutable. More
     * Specific ASA ID(s) \[up to 4]
     * Tokens/NFTs created by any address linked within a particular NFD.
     * Owning a segment of a particular NFD Root
+
