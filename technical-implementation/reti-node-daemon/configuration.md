@@ -39,7 +39,7 @@ The following files are checked and loaded (if found in working directory) in th
 
 Mnemonics for the manager address at the moment are read from the environment (in any manner defined above), by reading all environment variables with '\_MNEMONIC' as part of the environment variable name. The value is expected to be a space-delimited 25 word Algorand mnemoic.
 
-If none of the addresses loaded via these mnemonics match the owenr or manager of the specified validator ID, the node daemon will refuse to run.
+If none of the addresses loaded via these mnemonics match the owner or manager of the specified validator ID, the node daemon will refuse to run.
 
 #### Global Command Line options
 
@@ -53,7 +53,7 @@ If none of the addresses loaded via these mnemonics match the owenr or manager o
 
 #### Environment only overrides (.env files as well):
 
-Some options are only overriden through environment variables as they're more low-level.
+Some options are only overridden through environment variables as they're more low-level.
 
 * ALGORAND\_DATA
   * If detected, the address to connect to will be read from $ALGORAND\_DATA/algod.net and the admin token will be read from $ALGORAN\_DATA/algod.admin.token.
