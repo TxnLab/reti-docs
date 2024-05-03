@@ -16,7 +16,7 @@ layout:
 
 ## Protocol Overview
 
-The Réti Open Pooling protocol facilitates the creation of decentralized staking pools on the Algorand network, enabling broader participation in its consensus mechanism.
+The Réti Open Pooling protocol facilitates the creation of decentralized staking pools on the Algorand network, enabling broad participation in its consensus mechanism. Stakers are able to trustlessly stake to Validators pools and earn yield based on the rewards the Validator receives.
 
 * The minimum stake to receive node rewards on Algorand is 30,000 ALGO.
 * The protocol allows anyone to create or join staking pools to collectively meet this threshold.
