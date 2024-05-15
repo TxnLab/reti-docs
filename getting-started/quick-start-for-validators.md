@@ -16,7 +16,7 @@ Validators can define a number of parameters - some of which are immutable. More
 
 * Owner address
 * Manager address
-* Epcoh Length (Payout frequency)
+* Epoch Length (Payout frequency) in rounds \[blocks]
 * Validator commission rate
 * Validator fee address
 * Minimum entry amount
