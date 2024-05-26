@@ -16,7 +16,7 @@
 * On each node, it will monitor the staking pools defined and automatically create short-lived (1 week) participation keys with that nodes algod instance.
 
 {% hint style="warning" %}
-Participation keys for pools assigned to a node are only created once state is present in the pool !
+Participation keys for pools assigned to a node are only created once stake is present in the pool !
 {% endhint %}
 
 * The participation keys will be monitored for expiration and new keys will be created in advance so that its always online.
