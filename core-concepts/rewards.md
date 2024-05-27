@@ -59,7 +59,7 @@ Stakers can remove their stake from the pool at any time. When stake is removed,
 
 * Determines the 'reward' amount based on the current pool balance vs the known 'staked' amount.
 * Directly pays the validator their commission, which is immutable and part of defining the validator record itself.
-  * If the validators 'manager' account is low on funds (<1 ALGO spendable) then up to 1 ALGO of the validators commission will be sent to the manager account to ensure it has ALGO for transactions. The manager account is what issues the 'epoch update' transactions every epoch and needs algo for fees.
+  * If the validators 'manager' account is low on funds (<2.1 ALGO spendable) then up to 2.1 ALGO of the validators commission will be sent to the manager account to ensure it has ALGO for transactions. The manager account is what issues the 'epoch update' transactions every epoch and needs algo for fees.
 * Walks the 'ledger' of stakers, and updates their balance to include their percentage of the shared reward (and thus compounding)
 * The % share the user gets is based on their stake and is adjusted based on the % of time they were 'in the epoch'. A staker adding/entering stake 95% of the way through an epoch would only receive 5% of the reward they would have received had they been in the pool for the entire epoch.
 * After paying 'partial' epoch holders, the remaining reward (which now has extra) is divided across the 'in pool 100% of the epoch' stakers with their relative % of the pool being based on their % of the total (minus the stake of the partial epoch stakers).
