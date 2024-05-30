@@ -30,6 +30,10 @@ docker run --env-file .env txnlab/reti:latest d
 
 Also see a docker compose example here: [docker-compose.md](docker-compose.md "mention")
 
+## SystemD daemon
+
+See [systemd-daemon.md](systemd-daemon.md "mention")for an example systemd configuration file.
+
 ## Running from command-line or as background process
 
 Assuming your Algorand node is on the same machine, and assuming the **ALGORAND\_DATA** environment variable is set, then the Reti daemon will automatically get the URL of the algod HTTP API as well as the Admin token from the directory (via the algod.net and algod.admin.token files)
@@ -39,7 +43,3 @@ In this example, the validator ID is 1, but it needs to be the validator ID allo
 ```sh
 ./reti -validator 1 -node 1 daemon
 ```
-
-Linux / OSX administrators can easily set this process up as a systemd daemon. Examples or pre-defined configurations will be come later.
-
-## Running as sidecar w/ Algorand node in Kubernetes

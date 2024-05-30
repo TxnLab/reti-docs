@@ -23,6 +23,7 @@
   * [Configuration](technical-implementation/reti-node-daemon/configuration.md)
   * [Builds and simple use](technical-implementation/reti-node-daemon/builds-and-simple-use.md)
   * [Running examples](technical-implementation/reti-node-daemon/running-examples/README.md)
+    * [systemd daemon](technical-implementation/reti-node-daemon/running-examples/systemd-daemon.md)
     * [Docker Compose](technical-implementation/reti-node-daemon/running-examples/docker-compose.md)
   * [Metrics](technical-implementation/reti-node-daemon/metrics.md)
 * [Front End](technical-implementation/front-end.md)
