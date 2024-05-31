@@ -2,11 +2,12 @@
 
 Very few configuration parameters are actually required for running the node daemon (running with the 'daemon' command). The only requirements are:
 
-* The Algorand node to connect to for 'this' node\
+* The Algorand node to connect to for 'this' node and its ADMIN key token.\
   Each Reti node MUST connect to a distinct Algorand node as the participation keys per-node are 1:1 mapped to specific pools you've assigned for your validator.
-  * Set through **ALGO\_ALGOD\_URL** environment variable, or will also use ALGORAND\_DATA env variable and read settings from the algod.net, algod.admin.token files
+  * Set through **ALGO\_ALGOD\_URL** environment variable, or will also use **ALGORAND\_DATA** env variable and read settings from the algod.net, algod.admin.token files
   * If running on same machine, this will likely be:\
     ALGO\_ALGOD\_URL=http://localhost:8080
+  * **ALGO\_ALGOD\_TOKEN**: (if not using ALGORAND\_DATA) Set this to the value contained in the algod.admin.token file inside your node's data directory.
 * Validator ID (**RETI\_VALIDATORID** env var or -validator cmd line arg)
   * The validator ID assigned to you when you added yourself as a validator. This is simply a sequential number in the protocol.
 * Node Number (**RETI\_NODENUM** env var, -node cmd line arg, or -usehostname flag)
