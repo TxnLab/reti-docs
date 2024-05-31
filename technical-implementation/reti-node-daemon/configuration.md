@@ -4,13 +4,13 @@ Very few configuration parameters are actually required for running the node dae
 
 * The Algorand node to connect to for 'this' node and its ADMIN key token.\
   Each Reti node MUST connect to a distinct Algorand node as the participation keys per-node are 1:1 mapped to specific pools you've assigned for your validator.
-  * Set through **ALGO\_ALGOD\_URL** environment variable, or will also use **ALGORAND\_DATA** env variable and read settings from the algod.net, algod.admin.token files
+  * Set through **`ALGO_ALGOD_URL`** environment variable, or will also use **`ALGORAND_DATA`** env variable and read settings from the algod.net, algod.admin.token files
   * If running on same machine, this will likely be:\
-    ALGO\_ALGOD\_URL=http://localhost:8080
-  * **ALGO\_ALGOD\_TOKEN**: (if not using ALGORAND\_DATA) Set this to the value contained in the algod.admin.token file inside your node's data directory.
-* Validator ID (**RETI\_VALIDATORID** env var or -validator cmd line arg)
+    `ALGO_ALGOD_URL`=http://localhost:8080
+  * **`ALGO_ALGOD_TOKEN`**: (if not using `ALGORAND_DATA`) Set this to the value contained in the algod.admin.token file inside your node's data directory.
+* Validator ID (**`RETI_VALIDATORID`** env var or -validator cmd line arg)
   * The validator ID assigned to you when you added yourself as a validator. This is simply a sequential number in the protocol.
-* Node Number (**RETI\_NODENUM** env var, -node cmd line arg, or -usehostname flag)
+* Node Number (**`RETI_NODENUM`** env var, -node cmd line arg, or -usehostname flag)
   * A number from 1 - X (the maximum number of nodes allowed in the protoclo)
   * This can be set automatically for kubernetes installations using the (--usehostname flag)
 * Mnemonics for the owner or manager address.
@@ -44,7 +44,7 @@ If none of the addresses loaded via these mnemonics match the owner or manager o
 
 #### Global Command Line options
 
-<table><thead><tr><th>Command Line Option</th><th width="192">Environment Variable</th><th></th></tr></thead><tbody><tr><td>--envfile {file}</td><td>RETI_ENVFILE</td><td>Specify an additional file to process like an .env file.</td></tr><tr><td>--validator</td><td>RETI_VALIDATORID</td><td>The validator ID of the validator running commands like the daemon</td></tr><tr><td>--node</td><td>RETI_NODENUM</td><td>The node number (1 - 6)</td></tr><tr><td>--usehostname</td><td></td><td>When running in Kubernetes environments, this sets the node number assuming the node daemon is running as a sidecar alongside an algod container. The suffix of the (presumed statefulset) hostname is used for the node number. Since stateful sets are sequentially numbered starting from 0, the node number will be the hostname suffix + 1.</td></tr><tr><td>--network</td><td>ALGO_NETWORK</td><td>Override the network to use (sandbox, betanet, testnet, mainnet, voitestnet)</td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Command Line Option</th><th width="205">Environment Variable</th><th></th></tr></thead><tbody><tr><td>--envfile {file}</td><td><code>RETI_ENVFILE</code></td><td>Specify an additional file to process like an .env file.</td></tr><tr><td>--validator</td><td><code>RETI_VALIDATORID</code></td><td>The validator ID of the validator running commands like the daemon</td></tr><tr><td>--node</td><td><code>RETI_NODENUM</code></td><td>The node number (1 - 6)</td></tr><tr><td>--usehostname</td><td></td><td>When running in Kubernetes environments, this sets the node number assuming the node daemon is running as a sidecar alongside an algod container. The suffix of the (presumed statefulset) hostname is used for the node number. Since stateful sets are sequentially numbered starting from 0, the node number will be the hostname suffix + 1.</td></tr><tr><td>--network</td><td><code>ALGO_NETWORK</code></td><td>Override the network to use (sandbox, betanet, testnet, mainnet, voitestnet)</td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 #### Options for 'Daemon' mode
 
@@ -56,11 +56,11 @@ If none of the addresses loaded via these mnemonics match the owner or manager o
 
 Some options are only overridden through environment variables as they're more low-level.
 
-* ALGORAND\_DATA
-  * If detected, the address to connect to will be read from $ALGORAND\_DATA/algod.net and the admin token will be read from $ALGORAN\_DATA/algod.admin.token.
-* ALGO\_ALGOD\_URL
+* `ALGORAND_DATA`
+  * If detected, the address to connect to will be read from $ALGORAND\_DATA/algod.net and the admin token will be read from $ALGORAND\_DATA/algod.admin.token.
+* `ALGO_ALGOD_URL`
   * The Algorand node address (ie: http://localhost:8080) to connect to for this daemon's node. Each node daemon should connect to its own independent algorand node.
-* ALGO\_ALGOD\_TOKEN
-  * The ADMIN token to use when making calls to the Algorand node for this daemon
-* ALGO\_ALGOD\_HEADERS
+* `ALGO_ALGOD_TOKEN`
+  * The **ADMIN** token to use when making calls to the Algorand node for this daemon.  Found in algod.admin.token file in Node data directory.
+* `ALGO_ALGOD_HEADERS`
   * Comma delimiter key:value pairs to set in the headers passed in calls to the algod API. Seldom needed but may be required if you have additional policies defined in some type of fronting load-balancer or proxy.
