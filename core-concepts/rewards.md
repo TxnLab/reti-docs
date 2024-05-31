@@ -1,6 +1,8 @@
 # Rewards
 
-Staking pools will receive rewards when they propose blocks, as long as they're above the 30K ALGO threshold and below the maximum amount defined by the protocol (around 70M currently) and have good performance. Rewards for stakers and validators are distributed periodically at the end of each epoch, which is a fixed period of time determined by the validator. The reward distribution and calculation is designed to prevent gaming of the system.
+Staking pools will receive rewards when they propose blocks, as long as they're above the 30K ALGO threshold and below the maximum amount defined by the protocol (around 70M currently) and have good performance.
+
+Rewards for stakers and validators are distributed periodically at the end of each epoch, which is a fixed period of time determined by the validator. The reward distribution and calculation is designed to prevent gaming of the system.
 
 There is a special limit per-validator of 10% of all online stake. A type of slashing occurs if this is reached. See **Saturation** below.
 
@@ -33,7 +35,7 @@ $$
 
 #### Hard caps
 
-* **There is a 15% of online stake 'hard' cap** - where new stakers or additional stake can no longer be added to a validator. This is to help safeguard the protocol.
+* **There is a 15% of online stake 'hard' cap** - where new stakers or additional stake can no longer be added to a validator. This is to help safeguard the Algorand protocol from dangerously concentrated stake.
 
 #### Partial Epoch Staking
 

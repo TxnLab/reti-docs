@@ -12,31 +12,28 @@ layout:
     visible: true
 ---
 
-# Réti Open Pooling Overview
+# Réti Pooling Overview
 
 ## Protocol Overview
 
-The Réti Open Pooling protocol facilitates the creation of decentralized staking pools on the Algorand network, enabling broad participation in its consensus mechanism. Stakers are able to trustlessly stake to Validators pools and earn yield based on the rewards the Validator receives.
+The Réti Pooling protocol facilitates the creation of decentralized staking pools on the Algorand network, enabling groups of individuals to participate in consensus together. Users are able to trustlessly stake to a Validator and earn yield based on the rewards the Validator receives.
 
-* The minimum stake to receive node rewards on Algorand is 30,000 ALGO.
-* The protocol allows anyone to create or join staking pools to collectively meet this threshold.
-* It provides an open-source foundation with smart contracts, backend infrastructure, and customizable front-end interfaces.
-* Validators can configure pools to suit varied needs while maintaining core immutable parameters.
+* The protocol allows anyone to create or join staking pools.
 * The protocol is completely decentralized and non-custodial.
+* Validators can configure pools to suit varied needs while maintaining core immutable parameters.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Réti Pooling Dashboard</p></figcaption></figure>
 
 ***
 
 #### Key Objectives
 
-1. **Increase Participation in Algorand Consensus**
+1. **Increase Participation in Algorand Consensus:**
    * Provides an option for permissionless staking pools.
-   * Allows small stakeholders to directly participate in consensus by pooling stakes.
+   * Allows small stakeholders to directly participate in consensus by pooling stake.
    * Users and validators can earn yield and secure the network.
-2. **Enhance Overall Security with Decentralization**
-   * Promotes a variety of independent validators and staking pools.
-   * Offers a decentralized alternative to centralized liquid staking solutions.
-   * Helps diversify stake across numerous nodes for better security.
-3. **Incentivize Many Validators**
-   * Enables smaller developers and communities to launch and operate staking pools.
+2. **Enhance Overall Security with Decentralization:**
+   * Promotes a variety of independent validators.
+   * Offers a decentralized alternative to more centralized solutions.
+   * Helps diversify stake across numerous nodes for better network security.
    * Provides a reliable revenue stream for projects to benefit from staking.
-   * Caters to meme coin, NFT communities, and other niche groups.

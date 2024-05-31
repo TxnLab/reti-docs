@@ -2,8 +2,8 @@
 
 ## Introduction
 
-* [Réti Open Pooling Overview](README.md)
-* [Key Features](introduction/key-features.md)
+* [Réti Pooling Overview](README.md)
+* [Key Features For Validators](introduction/key-features.md)
 
 ## Getting Started
 
