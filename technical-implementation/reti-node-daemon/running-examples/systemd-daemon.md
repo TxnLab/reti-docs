@@ -6,6 +6,8 @@ For your own configuration, note the user / group parameters, and the validator,
 
 In this example, the reti binary and .env file were place inside /home/reti.
 
+The Algorand node (running on the same  machine) is in the default /var/lib/algorand directory.
+
 {% code title="/home/reti/.env" %}
 ```
 ALGO_MNEMONIC=twenty five word mnemonics of your hotwallet manager account
@@ -20,6 +22,7 @@ After=network.target
 
 [Service]
 Type=simple
+Environment="ALGORAND_DATA=/var/lib/algorand"
 WorkingDirectory=/home/reti
 ExecStart=/home/reti/reti --validator 1 --node 1 --network testnet daemon
 User=reti
