@@ -4,6 +4,7 @@
 
 * [Réti Pooling Overview](README.md)
 * [Key Features For Validators](introduction/key-features.md)
+* [Testnet instance](introduction/testnet-instance.md)
 
 ## Getting Started
 
