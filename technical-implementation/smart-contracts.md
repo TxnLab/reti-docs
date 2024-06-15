@@ -10,9 +10,9 @@ See the README in the contracts/ directory for build / testing details.
 
 Some diagrams of the workings are provided here as some may find them useful but the contracts themselves are the best source for complete details.  Not every operation is shown in the sequence diagrams as they would be far too verbose.
 
-<figure><img src="../.gitbook/assets/Reti_Validator_Pools_Page_1.png" alt=""><figcaption><p>General Overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Reti Validator Pools - Page 1.png" alt=""><figcaption><p>General Overview</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Reti_Validator_Pools_Page_2.png" alt=""><figcaption><p>Basic Operations</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Reti Validator Pools - Page 2.png" alt=""><figcaption><p>Basic Operations</p></figcaption></figure>
 
 ***
 
