@@ -12,22 +12,22 @@ Some diagrams of the workings are provided here as some may find them useful but
 
 ## General Overview
 
-<figure><img src="../.gitbook/assets/Reti Validator Pools - Page 1.png" alt=""><figcaption><p>General Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Reti Validator Pools - Page 1.png" alt=""><figcaption><p>General Overview</p></figcaption></figure>
 
 ## Basic Operations
 
-<figure><img src="../.gitbook/assets/Reti Validator Pools - Page 2.png" alt=""><figcaption><p>Basic Operations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Reti Validator Pools - Page 2.png" alt=""><figcaption><p>Basic Operations</p></figcaption></figure>
 
 ***
 
 ## **State and Box Storage**
 
-<figure><img src="../.gitbook/assets/retiStorage.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/retiStorage.png" alt=""><figcaption></figcaption></figure>
 
 ## **Validator Operations**
 
-<figure><img src="../.gitbook/assets/validator.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validator.png" alt=""><figcaption></figcaption></figure>
 
 ## **Staking Operations**
 
-<figure><img src="../.gitbook/assets/staker.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/staker.png" alt=""><figcaption></figcaption></figure>

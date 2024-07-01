@@ -22,7 +22,7 @@ The Réti Pooling protocol facilitates the creation of decentralized staking poo
 * The protocol is completely decentralized and non-custodial.
 * Validators can configure pools to suit varied needs while maintaining core immutable parameters.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Réti Pooling Dashboard</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Réti Pooling Dashboard</p></figcaption></figure>
 
 ***
 

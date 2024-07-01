@@ -19,7 +19,8 @@
 
 ## Technical Implementation
 
-* [Smart Contracts](technical-implementation/smart-contracts.md)
+* [Smart Contracts](technical-implementation/smart-contracts/README.md)
+  * [Example Lora Visualizations](technical-implementation/smart-contracts/example-lora-visualizations.md)
 * [Reti Node Daemon](technical-implementation/reti-node-daemon/README.md)
   * [Configuration](technical-implementation/reti-node-daemon/configuration.md)
   * [Builds and simple use](technical-implementation/reti-node-daemon/builds-and-simple-use.md)

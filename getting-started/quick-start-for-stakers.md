@@ -2,7 +2,7 @@
 
 The Staking Dashboard is where you can manage your stake in various validators.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Staking Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Staking Dashboard</p></figcaption></figure>
 
 ## Comparing Validators
 
