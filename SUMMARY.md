@@ -32,6 +32,7 @@
 
 ## Resources
 
+* [Disclaimer](resources/disclaimer.md)
 * [FAQ](resources/faq.md)
 * [Contribute](resources/contribute.md)
 * [Monitoring](resources/monitoring.md)
