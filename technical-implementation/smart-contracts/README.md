@@ -4,6 +4,8 @@ The contracts are written using AlgoKit and TEALScript. &#x20;
 
 The source for Reti, its contracts, node daemon and UI is currently at [https://github.com/TxnLab/reti](https://github.com/TxnLab/reti)
 
+Audits for the contracts can be found alongside the contracts, here: [https://github.com/TxnLab/reti/tree/main/contracts/contracts/audit](https://github.com/TxnLab/reti/tree/main/contracts/contracts/audit)
+
 Information on Tealscript can be found [here](https://tealscript.netlify.app/).
 
 See the README in the contracts/ directory for build / testing details.
