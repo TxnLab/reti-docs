@@ -36,3 +36,7 @@ Validators can define a number of parameters - some of which are immutable. More
     * Tokens/NFTs created by any address linked within a particular NFD.
     * Owning a segment of a particular NFD Root
 
+### Add First Staking Pool
+
+* Once your validator has been added, you **MUST** add a staking pool.  Click the '...' to the right of your listed validator, and select 'Add Staking Pool' to add your first pool.  Without a pool, users can't stake.  The node number you specify is the node number the pool will be hosted and which the node daemon will manage keys for.
+* See [staking-pools.md](../core-concepts/staking-pools.md "mention") for more information.
