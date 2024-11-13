@@ -8,6 +8,7 @@
 
 ## Getting Started
 
+* [Front End](getting-started/front-end.md)
 * [Quick Start For Stakers](getting-started/quick-start-for-stakers.md)
 * [Quick Start For Validators](getting-started/quick-start-for-validators.md)
 
